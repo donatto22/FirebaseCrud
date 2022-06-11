@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		626DAAED284FE303002B746F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626DAAEC284FE303002B746F /* HomeView.swift */; };
+		627B39DB2853B939006F8254 /* metadataDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B39DA2853B939006F8254 /* metadataDatasource.swift */; };
+		62D71DB42852AED40066835C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 62D71DB32852AED40066835C /* FirebaseFirestore */; };
+		62D71DB62852AEE30066835C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62D71DB52852AEE30066835C /* FirebaseFirestoreSwift */; };
+		62D71DB92852AF540066835C /* AlimentoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D71DB82852AF540066835C /* AlimentoViewModel.swift */; };
+		62D71DBC2852AF770066835C /* AlimentoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D71DBB2852AF770066835C /* AlimentoRepository.swift */; };
+		62D71DBE2852AF8F0066835C /* AlimentoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D71DBD2852AF8F0066835C /* AlimentoDataSource.swift */; };
+		62D71DC028530FBE0066835C /* AlimentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D71DBF28530FBE0066835C /* AlimentoView.swift */; };
+		62F33460284AA9FF00E56729 /* examen2_minayaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3345F284AA9FF00E56729 /* examen2_minayaApp.swift */; };
+		62F33462284AA9FF00E56729 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F33461284AA9FF00E56729 /* ContentView.swift */; };
+		62F33464284AAA0200E56729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F33463284AAA0200E56729 /* Assets.xcassets */; };
+		62F33467284AAA0200E56729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F33466284AAA0200E56729 /* Preview Assets.xcassets */; };
+		62F3346F284AAA1D00E56729 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62F3346E284AAA1D00E56729 /* GoogleService-Info.plist */; };
+		62F33472284AAC7F00E56729 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 62F33471284AAC7F00E56729 /* FirebaseAnalytics */; };
+		62F33474284AAC7F00E56729 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62F33473284AAC7F00E56729 /* FirebaseAnalyticsSwift */; };
+		62F33476284ABA2F00E56729 /* LoginEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F33475284ABA2F00E56729 /* LoginEmailView.swift */; };
+		62F33478284AD05500E56729 /* RegisterEmmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F33477284AD05500E56729 /* RegisterEmmailView.swift */; };
+		62F3347D284AD2AF00E56729 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 62F3347C284AD2AF00E56729 /* FirebaseAuth */; };
+		62F33480284AD34500E56729 /* AuthenticationFirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F3347F284AD34500E56729 /* AuthenticationFirebaseDatasource.swift */; };
+		62F33482284AFB5200E56729 /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F33481284AFB5200E56729 /* AuthenticationRepository.swift */; };
+		62F33484284AFC4C00E56729 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F33483284AFC4C00E56729 /* AuthenticationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		626DAAEC284FE303002B746F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		627B39DA2853B939006F8254 /* metadataDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metadataDatasource.swift; sourceTree = "<group>"; };
+		62D71DB82852AF540066835C /* AlimentoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoViewModel.swift; sourceTree = "<group>"; };
+		62D71DBB2852AF770066835C /* AlimentoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoRepository.swift; sourceTree = "<group>"; };
+		62D71DBD2852AF8F0066835C /* AlimentoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoDataSource.swift; sourceTree = "<group>"; };
+		62D71DBF28530FBE0066835C /* AlimentoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentoView.swift; sourceTree = "<group>"; };
+		62F3345C284AA9FF00E56729 /* examen2-minaya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "examen2-minaya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62F3345F284AA9FF00E56729 /* examen2_minayaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examen2_minayaApp.swift; sourceTree = "<group>"; };
+		62F33461284AA9FF00E56729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		62F33463284AAA0200E56729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62F33466284AAA0200E56729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		62F33468284AAA0200E56729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62F3346E284AAA1D00E56729 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62F33475284ABA2F00E56729 /* LoginEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailView.swift; sourceTree = "<group>"; };
+		62F33477284AD05500E56729 /* RegisterEmmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEmmailView.swift; sourceTree = "<group>"; };
+		62F3347F284AD34500E56729 /* AuthenticationFirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDatasource.swift; sourceTree = "<group>"; };
+		62F33481284AFB5200E56729 /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		62F33483284AFC4C00E56729 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62F33459284AA9FF00E56729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D71DB62852AEE30066835C /* FirebaseFirestoreSwift in Frameworks */,
+				62F33474284AAC7F00E56729 /* FirebaseAnalyticsSwift in Frameworks */,
+				62D71DB42852AED40066835C /* FirebaseFirestore in Frameworks */,
+				62F3347D284AD2AF00E56729 /* FirebaseAuth in Frameworks */,
+				62F33472284AAC7F00E56729 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62D71DB72852AF040066835C /* Alimentos */ = {
+			isa = PBXGroup;
+			children = (
+				62D71DBA2852AF640066835C /* Repository */,
+				62D71DB82852AF540066835C /* AlimentoViewModel.swift */,
+				626DAAEC284FE303002B746F /* HomeView.swift */,
+				62D71DBF28530FBE0066835C /* AlimentoView.swift */,
+			);
+			path = Alimentos;
+			sourceTree = "<group>";
+		};
+		62D71DBA2852AF640066835C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				62D71DBB2852AF770066835C /* AlimentoRepository.swift */,
+				627B39DA2853B939006F8254 /* metadataDatasource.swift */,
+				62D71DBD2852AF8F0066835C /* AlimentoDataSource.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		62F33453284AA9FF00E56729 = {
+			isa = PBXGroup;
+			children = (
+				62F3345E284AA9FF00E56729 /* examen2-minaya */,
+				62F3345D284AA9FF00E56729 /* Products */,
+				62F3347B284AD2AF00E56729 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62F3345D284AA9FF00E56729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62F3345C284AA9FF00E56729 /* examen2-minaya.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62F3345E284AA9FF00E56729 /* examen2-minaya */ = {
+			isa = PBXGroup;
+			children = (
+				62F3345F284AA9FF00E56729 /* examen2_minayaApp.swift */,
+				62F3347E284AD2F100E56729 /* AuthenticationViews */,
+				62F3346E284AAA1D00E56729 /* GoogleService-Info.plist */,
+				62F3347F284AD34500E56729 /* AuthenticationFirebaseDatasource.swift */,
+				62D71DB72852AF040066835C /* Alimentos */,
+				62F33481284AFB5200E56729 /* AuthenticationRepository.swift */,
+				62F33483284AFC4C00E56729 /* AuthenticationViewModel.swift */,
+				62F33463284AAA0200E56729 /* Assets.xcassets */,
+				62F33468284AAA0200E56729 /* Info.plist */,
+				62F33465284AAA0200E56729 /* Preview Content */,
+			);
+			path = "examen2-minaya";
+			sourceTree = "<group>";
+		};
+		62F33465284AAA0200E56729 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				62F33466284AAA0200E56729 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		62F3347B284AD2AF00E56729 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62F3347E284AD2F100E56729 /* AuthenticationViews */ = {
+			isa = PBXGroup;
+			children = (
+				62F33461284AA9FF00E56729 /* ContentView.swift */,
+				62F33475284ABA2F00E56729 /* LoginEmailView.swift */,
+				62F33477284AD05500E56729 /* RegisterEmmailView.swift */,
+			);
+			path = AuthenticationViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62F3345B284AA9FF00E56729 /* examen2-minaya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62F3346B284AAA0200E56729 /* Build configuration list for PBXNativeTarget "examen2-minaya" */;
+			buildPhases = (
+				62F33458284AA9FF00E56729 /* Sources */,
+				62F33459284AA9FF00E56729 /* Frameworks */,
+				62F3345A284AA9FF00E56729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "examen2-minaya";
+			packageProductDependencies = (
+				62F33471284AAC7F00E56729 /* FirebaseAnalytics */,
+				62F33473284AAC7F00E56729 /* FirebaseAnalyticsSwift */,
+				62F3347C284AD2AF00E56729 /* FirebaseAuth */,
+				62D71DB32852AED40066835C /* FirebaseFirestore */,
+				62D71DB52852AEE30066835C /* FirebaseFirestoreSwift */,
+			);
+			productName = "examen2-minaya";
+			productReference = 62F3345C284AA9FF00E56729 /* examen2-minaya.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62F33454284AA9FF00E56729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					62F3345B284AA9FF00E56729 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 62F33457284AA9FF00E56729 /* Build configuration list for PBXProject "examen2-minaya" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62F33453284AA9FF00E56729;
+			packageReferences = (
+				62F33470284AAC7F00E56729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 62F3345D284AA9FF00E56729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62F3345B284AA9FF00E56729 /* examen2-minaya */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62F3345A284AA9FF00E56729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F33467284AAA0200E56729 /* Preview Assets.xcassets in Resources */,
+				62F33464284AAA0200E56729 /* Assets.xcassets in Resources */,
+				62F3346F284AAA1D00E56729 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62F33458284AA9FF00E56729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627B39DB2853B939006F8254 /* metadataDatasource.swift in Sources */,
+				62F33478284AD05500E56729 /* RegisterEmmailView.swift in Sources */,
+				62F33480284AD34500E56729 /* AuthenticationFirebaseDatasource.swift in Sources */,
+				62F33484284AFC4C00E56729 /* AuthenticationViewModel.swift in Sources */,
+				62F33462284AA9FF00E56729 /* ContentView.swift in Sources */,
+				62F33482284AFB5200E56729 /* AuthenticationRepository.swift in Sources */,
+				62D71DBE2852AF8F0066835C /* AlimentoDataSource.swift in Sources */,
+				626DAAED284FE303002B746F /* HomeView.swift in Sources */,
+				62D71DBC2852AF770066835C /* AlimentoRepository.swift in Sources */,
+				62F33476284ABA2F00E56729 /* LoginEmailView.swift in Sources */,
+				62D71DC028530FBE0066835C /* AlimentoView.swift in Sources */,
+				62D71DB92852AF540066835C /* AlimentoViewModel.swift in Sources */,
+				62F33460284AA9FF00E56729 /* examen2_minayaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		62F33469284AAA0200E56729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62F3346A284AAA0200E56729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62F3346C284AAA0200E56729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"examen2-minaya/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "examen2-minaya/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.examen2-minaya";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		62F3346D284AAA0200E56729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"examen2-minaya/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "examen2-minaya/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.examen2-minaya";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62F33457284AA9FF00E56729 /* Build configuration list for PBXProject "examen2-minaya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62F33469284AAA0200E56729 /* Debug */,
+				62F3346A284AAA0200E56729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62F3346B284AAA0200E56729 /* Build configuration list for PBXNativeTarget "examen2-minaya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62F3346C284AAA0200E56729 /* Debug */,
+				62F3346D284AAA0200E56729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62F33470284AAC7F00E56729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62D71DB32852AED40066835C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62F33470284AAC7F00E56729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		62D71DB52852AEE30066835C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62F33470284AAC7F00E56729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		62F33471284AAC7F00E56729 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62F33470284AAC7F00E56729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		62F33473284AAC7F00E56729 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62F33470284AAC7F00E56729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		62F3347C284AD2AF00E56729 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62F33470284AAC7F00E56729 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 62F33454284AA9FF00E56729 /* Project object */;
+}
